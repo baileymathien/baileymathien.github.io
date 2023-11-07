@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white; /* Pink */
+    color: #333; /* Text color */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 200px 0;
+    background-color: #FF69B4; /* Pink */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0;
+    color: white;
+}
+
+/* Navigation styles */
+header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF69B4; /* Pink */
+    padding: 10px 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #FF69B4; /* Pink */
+}
+
+.about-header {
+    display: inline-block;
+    padding: 30px;
+}
+
+p {
+    display: inline-block;
+    width: 70%; /* Adjust the width as needed */
+    vertical-align: top;
+}
+
+/* Project styles */
+.project {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-info li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333; /* Text color */
+}
+
+/* Style icons */
+.contact-info img {
+    width: 24px; /* Set the width and height as needed */
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FF69B4; /* Pink */
+    color: white;
+}
+
+/* Make links in the footer white */
+footer a {
+    color: white;
+}
