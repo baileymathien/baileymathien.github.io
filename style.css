@@ -1,113 +1,162 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white; /* Pink */
-    color: #333; /* Text color */
-}
 
-/* Header styles */
-header {
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background-color: #ff0088;
+    background-size:cover;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-family: 'Barbie', cursive;
+    font-size: 8.5rem;
+}
+.hero_desc {
+    font-family: 'Barbie', sans-serif;
+    font-size: 3rem;
+}
+.hero-text {
     text-align: center;
-    padding: 200px 0;
-    background-color: #FF69B4; /* Pink */
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: white;
-}
-
-header p {
-    font-size: 1.5em;
-    margin: 0;
-    color: white;
-}
-
-/* Navigation styles */
-header nav {
     position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #FF69B4; /* Pink */
-    padding: 10px 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:pink;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #ff0088;
+}
+.servicesText:hover {
+    border: 1px solid #ff0088;
 }
 
-header nav li {
-    display: inline;
-    margin: 0 10px;
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: #ff0088;
 }
 
-header nav a {
-    text-decoration: none;
-    color: white;
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-envelope:hover,.fa-github:hover,.fa-linkedin:hover {
+    color: #ffb2e9;
+}
+.fab {
+    color: #ffffff;
 }
 
-/* Section styles */
-section {
-    padding: 20px;
+.fa-envelope {
+    color: #ffffff;
 }
-
-h2 {
-    color: #FF69B4; /* Pink */
-}
-
-.about-header {
-    display: inline-block;
-    padding: 30px;
-}
-
-p {
-    display: inline-block;
-    width: 70%; /* Adjust the width as needed */
-    vertical-align: top;
-}
-
-/* Project styles */
-.project {
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    list-style: none;
-    padding: 0;
+/* footer styling */
+#footer {
+    background-color: #ff0088;
     text-align: center;
 }
 
-.contact-info li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 1.2em;
+/* spacing on all sections */
+#services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    font-family: 'IQOS', sans-serif;
+}
+#about {
+    padding-top: 4rem;
+    font-family: 'IQOS', sans-serif;
+}
+#contact, #services{
+    padding-bottom: 4rem;
 }
 
-.contact-info a {
-    text-decoration: none;
-    color: #333; /* Text color */
-}
 
-/* Style icons */
-.contact-info img {
-    width: 24px; /* Set the width and height as needed */
-    height: 24px;
-    margin-right: 10px;
-}
-
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #FF69B4; /* Pink */
+.navbar-nav .nav-link {
     color: white;
+    font-family: 'IQOS', sans-serif;
 }
 
-/* Make links in the footer white */
-footer a {
+.navbar-brand {
     color: white;
+    font-family: 'Barbie', sans-serif;
+    font-size: 40px !important;
 }
+
+/* Fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the fade-in animation to specific elements */
+.fade-in {
+    animation: fade-in 3s ease-in-out;
+    opacity: 0;
+}
+
+
+/* Add this CSS to your style.css or within a <style> tag in your HTML */
+.resume-link {
+    border: 2px solid #ffb2e9;; /* Border properties */
+    padding: 5px 10px; /* Padding around the link text */
+    border-radius: 5px; /* Rounded corners */
+    color: #ffb2e9 !important;
+}
+
+/* Experience section styling */
+#experience {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-color: #ffffff;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.experience-item.active {
+    color: #ff0088; /* Accent color */
+}
+
+.experience-description {
+    font-size: 1.2rem;
+    display: none;
+    padding: 10px;
+    background-color: #f8f8f8; /* Light gray background */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
